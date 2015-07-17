@@ -22,10 +22,12 @@
     "browser-sync": "^2.7.13",
     "chai": "^3.1.0",
     "colors.css": "^2.3.0",
+    "conventional-changelog": "0.0.17",
     "css-mqpacker": "^3.1.0",
     "cssnext": "^1.8.0",
     "del": "^1.2.0",
     "event-stream": "^3.3.1",
+    "gh-pages": "^0.3.1",
     "gulp": "^3.9.0",
     "gulp-changed": "^1.2.1",
     "gulp-concat-util": "^0.5.2",
@@ -56,7 +58,9 @@
     "test": "gulp && gulp test",
     "prerelease": "npm test",
     "release": "npm version -m 'chore(release): v%s'",
-    "postrelease": "git push --follow-tags"
+    "postrelease": "gulp changelog && git push --follow-tags",
+    "predeploy": "gulp bundle --production --homepage && gulp clean:up",
+    "deploy": "gulp ghpages"
   },
   "rootDirectories": {
     "src": "src",

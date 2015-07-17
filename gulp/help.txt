@@ -13,12 +13,15 @@
       license       Copy license and add `.txt` extension.
       htdocs        Compile views and files.
       clean         Clean all built files.
+      changelog     Generate a changelog from git metadata.
 
       serve         Launches the BrowserSync server.
 
       default       Build assets and root files to `dest`.
       bundle        Bundle CSS and JS files.
       watch         Watch CSS, JS, views and files for changes.
+
+      ghpages       Deploy `dest` to github gh-pages.
 
   Options:
 

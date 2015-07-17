@@ -8,7 +8,7 @@ module.exports = function(gulp, gp, config) {
 
         return gulp
             .src('runner.html', { cwd: 'test' })
-            .pipe(gp.mochaPhantomjs(config.mochaPhantomjs));
+            .pipe(gp.mochaPhantomjs(config.mochaphantomjs));
 
     });
 

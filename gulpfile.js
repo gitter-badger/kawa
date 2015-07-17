@@ -197,7 +197,7 @@ var options = {
      * @see: github.com/metaskills/mocha-phantomjs
      */
 
-    mochaPhantomjs: {
+    mochaphantomjs: {
         // Output of tests piped into a file
         // dump: 'test.log',
         // Pass options to mocha and/or PhantomJS
@@ -206,6 +206,35 @@ var options = {
             useColors: true
         }
         // ,phantomjs: {}
+    },
+
+    /**
+     * Conventional changelog
+     * @see: npmjs.com/package/conventional-changelog
+     */
+
+    changelog: {
+        version:    pkg.version,
+        // repository: pkg.repository.url,
+        // String to display after the version title in the changelog
+        // subtitle:   '',
+        // Which commit the changelog should start at
+        // from:       'v0.1.0',
+        file:       'CHANGELOG.md'
+    },
+
+    /**
+     * Github gh-pages options
+     * @see: npmjs.com/package/gh-pages
+     */
+
+    ghpages: {
+        // Include dotfiles
+        dotfiles: true,
+        // Name of the branch
+        branch:   'gh-pages',
+        // Commit message for all commits
+        message:  'Release v' + pkg.version
     },
 
     /**
