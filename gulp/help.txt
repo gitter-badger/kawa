@@ -1,0 +1,27 @@
+
+  Usage: gulp <task> [options...]
+
+  Tasks:
+
+      help          Display this message.
+
+      styles        Compiles CSS files using `@import`.
+      scripts       Concatenates JS files using `@include`.
+      images        Copy images and svg.
+      fonts         Copy fonts.
+      components    Copy components.
+      license       Copy license and add `.txt` extension.
+      htdocs        Compile views and files.
+      clean         Clean all built files.
+
+      serve         Launches the BrowserSync server.
+
+      default       Build assets and root files to `dest`.
+      bundle        Bundle CSS and JS files.
+      watch         Watch CSS, JS, views and files for changes.
+
+  Options:
+
+      --production    Minify CSS, JS, HTML.
+      --homepage      Production homepage (pkg.homepage).
+      --dest [DIR]    Overrides destination directory (dest).
