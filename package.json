@@ -1,6 +1,6 @@
 {
   "name": "kawa",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Minimal front-end boilerplate and build process.",
   "license": "MIT",
   "private": true,
