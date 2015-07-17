@@ -18,29 +18,24 @@ module.exports = function(pkg, options) {
     pkg.rootDirectories.dest = gp.util.env.dest || pkg.rootDirectories.dest;
 
     // Prepend root paths to `options.dirs.{src,dest}`
-
     utils.rewritePath(pkg.rootDirectories.src, options.dirs.src);
     utils.rewritePath(pkg.rootDirectories.dest, options.dirs.dest);
 
     // Optimize assets using `NODE_ENV=production` or `--production`
-
     var debug = (process.env.NODE_ENV !== 'production') && (typeof gp.util.env.production === 'undefined');
 
     // Base url depending of the context
     // Production url using `--homepage`
-
     var hostUrl = options.browsersync.proxy || 'http://localhost:' + options.browsersync.port;
     var baseUrl = gp.util.env.homepage ? pkg.homepage : hostUrl;
 
     // Add clrs.cc colors variables
-
     options.cssnext.features.customProperties.variables = _.extend(
         options.cssnext.features.customProperties.variables,
         clrs
     );
 
     // Custom properties
-
     var customOpts = {
 
         // Variables
@@ -65,11 +60,9 @@ module.exports = function(pkg, options) {
     };
 
     // Build configuration
-
     var config = _.extend(pkg, options, customOpts);
 
     // Load all the tasks
-
     var taskPath = 'gulp/tasks';
     var taskList = fs.readdirSync(taskPath).filter(utils.taskFilter);
 
@@ -78,7 +71,6 @@ module.exports = function(pkg, options) {
     });
 
     // Help task
-
     gulp.task('help', function() {
         console.log(fs.readFileSync('gulp/help.txt', 'utf8'));
     });

@@ -46,4 +46,18 @@ module.exports = function(gulp, gp, config) {
 
     });
 
+    // Watch tests files
+    gulp.task('watch:test', function() {
+
+        runSequence('default', 'test', function() {
+
+            gulp.watch([
+                'test/runner.html',
+                'test/spec.js'
+            ], ['test']);
+
+        });
+
+    });
+
 };

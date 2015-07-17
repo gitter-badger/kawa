@@ -8,6 +8,7 @@ var del  = require('del');
 module.exports = function(gulp, gp, config) {
     'use strict';
 
+    // Clean all built files
     gulp.task('clean', function(done) {
 
         var viewFiles   = fs.readdirSync(config.dirs.src.view);
@@ -20,6 +21,16 @@ module.exports = function(gulp, gp, config) {
             config.dirs.dest.font,
             path.join(config.rootDirectories.dest, 'license.*'),
             path.join(config.rootDirectories.dest, '{' + htdocsFiles + '}')
+        ], done);
+
+    });
+
+    // Clean up before deployment
+    gulp.task('clean:up', function(done) {
+
+        del([
+            path.join(config.dirs.dest.js, '!(bundle)*.js'),
+            path.join(config.dirs.dest.css, '!(bundle)*.css')
         ], done);
 
     });

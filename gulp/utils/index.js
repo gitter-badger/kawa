@@ -9,13 +9,11 @@ var util = require('gulp-util');
 module.exports = {
 
     // Filter `.js` tasks
-
     taskFilter: function(item) {
         return /\.js$/i.test(item);
     },
 
     // Rewrite paths
-
     rewritePath: function(root, obj) {
         var result;
         result = _.object(_.map(obj, function (val, key) {
@@ -26,13 +24,11 @@ module.exports = {
     },
 
     // Print today's date `2015-10-20`
-
     today: function(str) {
         return util.date(new Date(), 'yyyy' + str + 'mm' + str + 'dd');
     },
 
     // Change string to TitleCase
-
     titleCase: function(str) {
         var title;
         return str.replace(/([^\W_]+[^\s-]*) */g, function(txt) {
@@ -42,7 +38,6 @@ module.exports = {
     },
 
     // Get data from a .json file or return {}
-
     dataJson: function(file) {
         var data;
         try {

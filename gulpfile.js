@@ -132,6 +132,8 @@ var options = {
 
     uglify: {
 
+        // jshint ignore:start
+        // jscs:disable
         beautify: {
             // Pass false to skip mangling names
             mangle: false,
@@ -157,6 +159,8 @@ var options = {
             preserveComments: 'some'
 
         }
+        // jshint ignore:end
+        // jscs:enable
 
     },
 
@@ -186,6 +190,22 @@ var options = {
         minifyJS: true,
         // Minify CSS in style elements and style attributes
         minifyCSS: true
+    },
+
+    /**
+     * Mocha PhantomJS options
+     * @see: github.com/metaskills/mocha-phantomjs
+     */
+
+    mochaPhantomjs: {
+        // Output of tests piped into a file
+        // dump: 'test.log',
+        // Pass options to mocha and/or PhantomJS
+        reporter: 'spec',
+        mocha: {
+            useColors: true
+        }
+        // ,phantomjs: {}
     },
 
     /**

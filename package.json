@@ -20,6 +20,7 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.7.13",
+    "chai": "^3.1.0",
     "colors.css": "^2.3.0",
     "css-mqpacker": "^3.1.0",
     "cssnext": "^1.8.0",
@@ -38,19 +39,24 @@
     "gulp-jscs": "^1.6.0",
     "gulp-jshint": "^1.11.2",
     "gulp-load-plugins": "^0.10.0",
+    "gulp-mocha-phantomjs": "^0.8.0",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^5.1.9",
     "gulp-preprocess": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace-task": "^0.2.1",
-    "gulp-svg2png": "^0.3.0",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.6",
+    "mocha": "^2.2.5",
     "run-sequence": "^1.1.1",
     "underscore": "^1.8.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "for i in jscs jshint; do node_modules/gulp-$i/node_modules/.bin/$i *.js gulp/**/*.js test/*.js; done",
+    "test": "gulp && gulp test",
+    "prerelease": "npm test",
+    "release": "npm version -m 'chore(release): v%s'",
+    "postrelease": "git push --follow-tags"
   },
   "rootDirectories": {
     "src": "src",
