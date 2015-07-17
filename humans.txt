@@ -1,0 +1,22 @@
+/* humanstxt.org | The humans responsible & technology colophon */
+
+
+/* TEAM */
+
+    Author: Mathias Brouilly
+
+
+/* SITE */
+
+    Updated: 2015-07-17
+    Version: 0.1.1
+    License: MIT
+
+    Standards:  HTML5, CSS3
+    Components: Normalize.css, Modernizr, jQuery
+    Software:   Vim, Gulp, Bower
+
+
+/* NOTE */
+
+    Made on Earth.
