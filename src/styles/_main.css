@@ -1,0 +1,16 @@
+/* _config.css */
+
+
+/* Demo styles */
+
+body
+{
+    color: var(--blue);
+    background: var(--color-txt);
+    margin: 0;
+}
+
+.test
+{
+    border-radius: 3px;
+}

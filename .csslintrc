@@ -1,0 +1,13 @@
+{
+    "box-sizing":                 false,
+    "box-model":                  false,
+    "unique-headings":            false,
+    "font-sizes":                 false,
+    "important":                  false,
+    "adjoining-classes":          false,
+    "outline-none":               false,
+    "compatible-vendor-prefixes": false,
+    "gradients":                  false,
+    "regex-selectors":            false,
+    "universal-selector":         false
+}
