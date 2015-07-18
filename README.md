@@ -1,5 +1,7 @@
 # [Kawa](repo-url)
 
+[![Join the chat at https://gitter.im/bymathias/kawa](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bymathias/kawa?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Release Version][release-badge]][release-url]
 [![David devDependencies][david-devDeps-badge]][david-devDeps-url]
 [![Travis Status][travis-badge]][travis-url]
