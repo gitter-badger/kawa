@@ -8,6 +8,7 @@
 
 - [node.js][nodejs-url] and [npm][npm-url]
 - [editorconfig][editorconfig-url]
+- [git][git-url]
 
 ## Installation
 
@@ -38,24 +39,20 @@ gulp help
 npm test
 ```
 
-## Favicon
-
-```sh
-# Create a `logo-square.svg` file inside the `design` directory and run
-./design/favicon.sh
-
-# then copy the favicons you need to `src/files`
-```
-
 ## Release
 
 ```sh
 # Bump version, update changelog
-npm run release
+# npm run release [ <newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease ]
+npm run release patch
 
 # Deployment
 npm run deploy
 ```
+
+## Contributing
+
+[Suggestions][gh-issue-url] and [improvements][gh-pull-url] are welcome.
 
 ## License
 
@@ -69,6 +66,10 @@ npm run deploy
 [repo-url]:    https://github.com/bymathias/kawa
 [license-url]: https://raw.githubusercontent.com/bymathias/kawa/master/LICENSE
 
+[gh-issue-url]: https://github.com/bymathias/kawa/issues
+[gh-pull-url]:  https://github.com/bymathias/kawa/pulls
+
 [nodejs-url]:       https://nodejs.org
 [npm-url]:          https://www.npmjs.com
 [editorconfig-url]: http://editorconfig.org "Help make the world a better place"
+[git-url]:          https://git-scm.com
