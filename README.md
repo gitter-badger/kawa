@@ -1,5 +1,9 @@
 # [Kawa](repo-url)
 
+[![Release Version][release-badge]][release-url]
+[![David devDependencies][david-devDeps-badge]][david-devDeps-url]
+[![Travis Status][travis-badge]][travis-url]
+
 > Minimal front-end framework/boilerplate and build process to quickly get projects going.
 
 [Demo][home-url]
@@ -62,14 +66,21 @@ npm run deploy
 
 <!-- Link labels -->
 
-[home-url]:    https://bymathias.github.io/kawa
-[repo-url]:    https://github.com/bymathias/kawa
-[license-url]: https://raw.githubusercontent.com/bymathias/kawa/master/LICENSE
+[home-url]:            https://bymathias.github.io/kawa
+[repo-url]:            https://github.com/bymathias/kawa
+[license-url]:         https://raw.githubusercontent.com/bymathias/kawa/master/LICENSE
 
-[gh-issue-url]: https://github.com/bymathias/kawa/issues
-[gh-pull-url]:  https://github.com/bymathias/kawa/pulls
+[nodejs-url]:          https://nodejs.org
+[npm-url]:             https://www.npmjs.com
+[editorconfig-url]:    http://editorconfig.org "Help make the world a better place"
+[git-url]:             https://git-scm.com
 
-[nodejs-url]:       https://nodejs.org
-[npm-url]:          https://www.npmjs.com
-[editorconfig-url]: http://editorconfig.org "Help make the world a better place"
-[git-url]:          https://git-scm.com
+[gh-issue-url]:        https://github.com/bymathias/kawa/issues
+[gh-pull-url]:         https://github.com/bymathias/kawa/pulls
+
+[release-badge]:       https://img.shields.io/github/release/bymathias/kawa.svg?style=flat-square
+[release-url]:         https://github.com/bymathias/kawa/releases
+[david-devDeps-badge]: http://img.shields.io/david/dev/bymathias/kawa.svg?style=flat-square
+[david-devDeps-url]:   https://david-dm.org/bymathias/kawa#info=devDependencies
+[travis-badge]:        http://img.shields.io/travis/bymathias/kawa.svg?style=flat-square
+[travis-url]:          https://travis-ci.org/bymathias/kawa
